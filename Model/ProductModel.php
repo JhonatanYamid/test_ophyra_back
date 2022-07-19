@@ -20,9 +20,9 @@ class Products
 
     public function insert($title, $price, $description, $image)
     {
-        $stmt = $this->db->prepare("INSERT INTO tbl_products (price, description, title, image) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param('isss', $price, $description, $title, $image);
-        $stmt->execute();
+        // $stmt = $this->db->prepare("INSERT INTO tbl_products (price, description, title, image) VALUES (?, ?, ?, ?)");
+        // $stmt->bind_param('isss', $price, $description, $title, $image);
+        // $stmt->execute();
         return array('response' => 'Success');
     }
 
